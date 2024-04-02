@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User login</title>
+</head>
+<body>
+<style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        background-image:url(./static/img/index2.jpg);
+
+        }
+        h6{
+        color:red;
+
+
+        }
+        h2{
+        color:green;
+        text-align:center;
+        font-family:"sans-serif",Times,serif;
+        font-size:1000%;
+
+        }
+        h1{
+        padding:1%;
+        color:red;
+        text-align:center;
+        font-family:"sans-serif",Times,serif;
+        font-size:50px;
+
+        }
+        .card{
+            border: 10px solid rgb(10,10 ,10);
+            padding: 1px;
+
+            card-size:5px;
+            box-shadow:20px 20px 20px rgba(10,10,10,10);
+        }
+    h4{
+        padding:0%;
+        <color:black></color:black>;
+        text-align:center;
+        font-family:"sans-serif",Times,serif;
+        font-size:50px;
+
+        }
+    h5{
+        color:black;
+        text-align:center;
+        font-family:"sans-serif",Times,serif;
+        font-size:10px;
+
+        }
+
+
+ </style>
+
+<form action="/login" method="POST">
+    <link rel="stylesheet" href="./static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<center><h1><b>" HARD'KNOK'S "</b></h1></center>
+<section class="vh-100 gradient-custom">
+
+
+ <div class="container py-4 h-1" >
+    <div class="row d-flex justify-content-center align-items-center h-9">
+      <div class="col-12 col-md-8 col-lg-2 col-xl-5">
+        <div class="card bg-transparent text-dark" style="border-radius: 900rem" align="left">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-0 mt-md-50 pb-50">
+
+
+
+
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase"> Login</h2>
+                <p class="text-white-50 mb-5"><h5>Please enter your login and password!</h5></p>
+
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="typeuname" class="form-control form-control-lg" name="username"/>
+                <label class="form-label"><h4>Username</h4></label>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password"/>
+                <label class="form-label" for="typePasswordX"><h4>Password</h4></label>
+              </div>
+
+            <a href="/user">
+               <button class="btn btn-outline-light btn-lg px-5 btn btn-danger" type="submit">Login</button>
+            </a>
+
+         <div class="msg" style="color:yellow">{{msg}}</div>
+            <div class="msg" style="color:yellow">{{msg1}}</div>
+            <br><br>
+              <p class="text-dark-50 fw-bold" >New to HARD'KNOK'S ?  <a href="/register" class="text-"blue-50 fw-bold><b><u>Register</u></b></a>
+              </p>
+
+              <p class="mb-0"> <a href="/admin" class="text-blue-50 fw-bold"><u><b> Admin Login </b></u></a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</section>
+
+</form>
+</body>
+</html>

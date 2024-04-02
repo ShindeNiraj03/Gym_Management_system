@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Registration Details</title>
+</head>
+<body>
+<style>
+     body{
+     background-repeat: no-repeat;
+            background-size: cover;
+        background-image:url(./static/img/training.jpg);
+        }
+    h1{
+    padding:80px;
+        color:white;
+        text-align:center;
+        font-family:"sans-serif",Times,serif;
+        font-size:1000%;
+
+        }
+
+</style>
+
+<div class="container">
+  <h1>Registration Details:</h1>
+     <link rel="stylesheet" href="./static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <table class="table">
+  <thead>
+    <tr bgcolor="pink">
+
+      <th scope="col">Username</th>
+      <th scope="col">Password</th>
+      <th scope="col">Name</th>
+      <th scope="col">Surname</th>
+      <th scope="col">Age</th>
+      <th scope="col">Weight</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Join Date</th>
+      <th scope="col">Slot</th>
+        <th scope="col">Payment Details</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for detail in alldetails %}
+        <tr bgcolor="mangenta">
+             <td>{{detail.username}}</td>
+             <td>{{detail.password}}</td>
+             <td>{{detail.name}}</td>
+             <td>{{detail.surname}}</td>
+             <td>{{detail.age}}</td>
+             <td>{{detail.weight}}</td>
+             <td>{{detail.mobile}}</td>
+             <td>{{detail.joindate}}</td>
+             <td>{{detail.slot}}</td>
+            <td>{{detail.paymentstatus}}</td>
+             <td><a href="/update/{{detail.username}}"><button type="button" class="btn btn-outline-dark btn btn-danger text-white">Update</button></a><td>
+             <td><a href="/delete/{{detail.username}}"><button type="button"  class="btn btn-outline-dark btn btn-danger text-white">Delete</button></a><td>
+            {%endfor%}
+    </tr>
+  </tbody>
+</table>
+</div>
+<center>
+    <div>
+    <a href="/waytologout"><button type="button"  class="btn btn-danger" style="display:flex">Return to Logout</button></a><td>
+</div>
+</center>
+
+
+</body>
+</html>

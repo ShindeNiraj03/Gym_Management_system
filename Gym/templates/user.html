@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    body{
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        background-image:url(./static/img/back.jpeg);
+        }
+
+
+</style>
+<table class="table table-hover">
+  <thead>
+    <div class="data" ></div>
+    <tr bgcolor="pink">
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Age</th>
+      <th>Weight</th>
+      <th>Mobile</th>
+      <th>Join Date</th>
+      <th>Slot</th>
+
+    </tr>
+  </thead>
+    <tbody class="body">
+    {% for entry in entries %}
+        <tr>
+            <td>{{entry.name}}</td>
+             <td>{{entry.surname}}</td>
+             <td>{{entry.age}}</td>
+             <td>{{entry.weight}}</td>
+             <td>{{entry.mobile}}</td>
+             <td>{{entry.joindate}}</td>
+             <td>{{entry.slot}}</td>
+            {%endfor%}
+
+
+</tr>
+    </tbody>
+
+
+</table>
+</body>
+<link rel="stylesheet" href="./static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+                <a href="/user" >
+                        <button type="button"  class="btn btn-outline-info  btn btn-danger" style="display:flex; float:center">Show Details</button>
+                </a>
+                <br><br>
+                <a href="/dropsession">
+                        <button type="button" class="btn btn-outline-info btn btn-danger" style="display:flex;center">Logout</button>
+                </a>
+
+
+
+
+
+
+
+
+
+
+</html>

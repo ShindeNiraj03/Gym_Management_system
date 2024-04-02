@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>logout</title>
+</head>
+<style>
+
+        body{
+            background-repeat: no-repeat;
+
+            background-size: cover;
+        background-image:url(./static/img/backgroundgym.jpg);
+        }
+
+    h1{
+        padding:10%;
+        color:yellow;
+        text-align:center;
+        font-family:"sans-serif",Times,serif;
+        font-size:250px;
+
+        }
+
+</style>
+
+<body>
+
+<link rel="stylesheet" href="./static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<center>
+    <h1>HARD'KNOK'S</h1>
+<a href="{{url_for('logout')}}">
+    <div class="d-grid gap-6 col-6 mx-auto">
+  <button class="btn btn-danger" type="button"><b>Confirm Logout</b></button>
+
+</div></a>
+
+</center>
+
+
+
+</body>
+</html>

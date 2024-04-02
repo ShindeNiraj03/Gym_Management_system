@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="./static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<center>
+<style>
+    body{
+         background:pink;
+            color:blue;
+         }
+    h1{
+        color:black;
+        text-align:center;
+        font-family:"Times New Roman",Times,serif;
+        font-size:400%;
+
+        background-color:pink
+    }
+</style>
+
+
+
+
+
+    <header><h1>*--* Update *--*</h1></header>
+
+           <div class="main">
+    <div class="register">
+        <form action="{{url_for('update',username=entry.username)}}" method="POST">
+        <label>Username </label>
+
+        <input type="text" name="username"
+        id="username" placeholder="Enter username"  value="{{entry.username}}"required>
+
+        <label>Password </label>
+
+        <input type="password" name="password"
+        id="pword" placeholder="Enter password" value="{{entry.password}}"required>
+    <br><br><br>
+        <label>First Name </label>
+
+        <input type="text" name="name"
+        id="name" placeholder="Enter First Name" value="{{entry.name}}"required>
+
+        <label>Last Name</label>
+
+        <input type="text" name="surname"
+        id="surname" placeholder="Enter Last Name"  value="{{entry.surname}}"required>
+
+        <label>Your Age</label>
+
+        <input type="number" name="age"
+        id="age" placeholder="Enter Your Age" value="{{entry.age}}" required>
+<br><br><br>
+        <label>Your Weight</label>
+
+        <input type="number" name="weight"
+        id="weight" placeholder="Enter Your Weight" value="{{entry.weight}}" required>
+
+
+        <label>Mobile No.</label>
+
+        <input type="Integer" name="mobile"
+        id="mobile" placeholder="Enter Mobile Number" value="{{entry.mobile}}" required>
+
+        <label>Join Date</label>
+
+        <input type="date" name="joindate"
+        id="date" placeholder="Enter Join Date" value="{{entry.joindate}}" required>
+
+        <label name="slot">Slot</label>
+
+        <select name="slot" value="{{entry.slot}}">
+        <option name="slot" >5 AM to 10AM</option>
+        <option name="slot">5 PM to 10PM</option>
+
+        </select>
+            <br><br><br>
+
+            <label name="paymentstatus">Payment Status</label>
+
+        <input type="text" name="paymentstatus"
+        id="paymentstatus" placeholder="paid / Unpaid" value="{{entry.paymentstatus}}" required>
+        <br><br><br><br>
+
+        <a>
+           <a href="/showdetails">
+            <button type="submit"  class="btn btn-danger">Update</button>
+            </a>
+
+
+        </a>
+
+
+
+        </form>
+    </div>
+    </div>
+
+
+
+
+</center>
+
+
+</body>
+</html>
+
